@@ -1,0 +1,134 @@
+[
+  {
+    "id": "Conversational Assistant",
+    "description": "Create prompts for helpful and natural conversations.",
+    "requiredSections": [
+      {
+        "name": "Role",
+        "fields": ["role", "language"]
+      },
+      {
+        "name": "Context",
+        "fields": ["topic", "background"]
+      },
+      {
+        "name": "Instructions",
+        "fields": ["task", "goal"]
+      },
+      {
+        "name": "Output Format",
+        "fields": ["response_structure", "tone_and_style"]
+      }
+    ],
+    "optionalSections": [
+      {
+        "name": "Constraints",
+        "fields": ["audience", "limits"]
+      },
+      {
+        "name": "Examples",
+        "fields": ["example_input", "example_output"]
+      }
+    ],
+    "supportedConfigurations": ["tone", "verbosity", "outputFormat"]
+  },
+  {
+    "id": "Code Generator",
+    "description": "Create prompts that generate code from clear instructions.",
+    "requiredSections": [
+      {
+        "name": "Role",
+        "fields": ["role", "language"]
+      },
+      {
+        "name": "Content",
+        "fields": ["problem_description", "input_output"]
+      },
+      {
+        "name": "Instructions",
+        "fields": ["task", "approach"]
+      },
+      {
+        "name": "Output Format",
+        "fields": ["code_structure", "commenting_style"]
+      }
+    ],
+    "optionalSections": [
+      {
+        "name": "Constraints",
+        "fields": ["time_complexity", "space_complexity"]
+      },
+      {
+        "name": "Examples",
+        "fields": ["sample_input", "sample_output"]
+      }
+    ],
+    "supportedConfigurations": ["tone", "verbosity", "outputFormat"]
+  },
+  {
+    "id": "Study Tutor",
+    "description": "Create prompts for explaining concepts and guiding learning.",
+    "requiredSections": [
+      {
+        "name": "Role",
+        "fields": ["role", "subject"]
+      },
+      {
+        "name": "Content",
+        "fields": ["topic", "skill_level"]
+      },
+      {
+        "name": "Instructions",
+        "fields": ["learning_goal", "approach"]
+      },
+      {
+        "name": "Output Format",
+        "fields": ["explanation_structure", "tone_and_style"]
+      }
+    ],
+    "optionalSections": [
+      {
+        "name": "Constraints",
+        "fields": ["limits", "output_length"]
+      },
+      {
+        "name": "Examples",
+        "fields": ["example_question", "example_answer"]
+      }
+    ],
+    "supportedConfigurations": ["tone", "verbosity", "outputFormat"]
+  },
+  {
+    "id": "Resume Reviewer",
+    "description": "Create prompts for reviewing resumes and giving feedback.",
+    "requiredSections": [
+      {
+        "name": "Role",
+        "fields": ["role", "industry"]
+      },
+      {
+        "name": "Content",
+        "fields": ["target_role", "experience_level"]
+      },
+      {
+        "name": "Instructions",
+        "fields": ["review_task", "focus_area"]
+      },
+      {
+        "name": "Output Format",
+        "fields": ["feedback_structure", "tone_and_style"]
+      }
+    ],
+    "optionalSections": [
+      {
+        "name": "Constraints",
+        "fields": ["limits", "output_length"]
+      },
+      {
+        "name": "Examples",
+        "fields": ["resume_section", "suggested_rewrite"]
+      }
+    ],
+    "supportedConfigurations": ["tone", "verbosity", "outputFormat"]
+  }
+]
